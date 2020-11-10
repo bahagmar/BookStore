@@ -12,7 +12,7 @@ public class Main {
 		System.out.println("entrez la quantité");
 		//lire le variable
 		int qte=c.nextInt();
-		//entrer le premier variable qte
+		//entrer le premier variable prix
 		System.out.println("entrez le prix");
 		//lire le variable
 		float untPrice=c.nextFloat();
