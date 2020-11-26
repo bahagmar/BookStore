@@ -1,11 +1,12 @@
 package bookstore;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
 	//la methode main
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		//entrer les variables a partitr de l'utilisateur 
 		Scanner c=new Scanner(System.in);
 		//entrer le premier variable qte
@@ -20,6 +21,8 @@ public class Main {
 		Produit p=new Produit();
 		//l'affichage du resultat
 		System.out.println("le totale est "+p.calculateTotalePrice(qte, untPrice));
+		p.display();
+		p.insertBook();
 
 	}
 
